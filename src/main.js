@@ -24,7 +24,7 @@
   persianRex.hasText = new RegExp(
     combineRegExps(numberRange, charRange, rtlPunctuations, ltrPunctuations)
   );
-  persianRex.hasRtl = new RegExp(combineRegExps(numberRange, charRange, rtlPunctuations));
+  persianRex.hasRtl = new RegExp(/(([۰-۹])|([کگۀی،تثجحخدغيًٌٍَپٰچژ‌ء-ةذ-عف-ٔ])|((،|؟|«|»|؛|٬)))/);
   
   persianRex.numbersASCIRange = numberRange;
   persianRex.lettersASCIRange = charRange;
